@@ -2,7 +2,7 @@ function scrollToForm() {
     var Y = document.getElementById('form').offsetHeight;
     var duration = 1000;
     var start = Date.now(),
-    	elem = document.documentElement.scrollTop?document.documentElement:document.body,
+    	elem = document.documentElement.scrollTop ? document.documentElement : document.body,
     	from = elem.scrollTop;
  
     function min(a,b) {
@@ -18,9 +18,10 @@ function scrollToForm() {
         var currentTime = Date.now(),
             time = min(1, ((currentTime - start) / duration)),
             easedT = easingFunction(time);
- 
-        elem.scrollTop = (easedT * (Y - from)) + from;
- 
+
+        //elem.scrollTop = (easedT * (Y - from)) + from;
+        window.scroll(0, (easedT * (Y - from)) + from);
+
         if(time < 1) requestAnimationFrame(scroll);
     }
  
