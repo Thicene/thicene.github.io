@@ -30,3 +30,7 @@ function scrollToForm() {
  
     requestAnimationFrame(scroll)
 }
+
+if(window.location.search === '?sent=1') {
+    document.getElementById('success').classList.add('visible');
+}
