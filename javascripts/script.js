@@ -5,10 +5,6 @@ function scrollToForm() {
     	elem = document.documentElement.scrollTop?document.documentElement:document.body,
     	from = elem.scrollTop;
  
-    if(from === Y) {
-        return; /* Prevent scrolling to the Y point if already there */
-    }
- 
     function min(a,b) {
     	return a<b?a:b;
     }
