@@ -11,7 +11,23 @@
 
   <body>
 
-    <h1>&lt;thicene&gt;</h1>
-    
+    <h1>
+    	<a href="javascript:scrollToForm()">
+    		&lt;thicene&gt;
+    		<img src="images/email.png" alt="">
+    	</a>
+    </h1>
+
+    <div id="form">
+    	<form action="//forms.brace.io/contact@thicene.fr" method="POST">
+    		<input type="hidden" name="_next" value="//thicene.fr?sent=1">
+    		<input type="hidden" name="_subject" value="Contact depuis le site">
+    		<input type="text" name="name" placeholder="Votre nom...">
+    		<input type="email" name="_replyto" placeholder="Votre adresse email...">
+    		<textarea name="message" placeholder="Votre message..."></textarea>
+    		<button type="submit">Envoyer</button>
+    	</form>
+    </div>
+    <script src="javascripts/script.js"></script>
   </body>
 </html>
