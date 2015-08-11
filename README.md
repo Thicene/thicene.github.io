@@ -1,4 +1,4 @@
-ByScripts.github.io
+thicene.github.io
 ===================
 
 Thicene Website
